@@ -2,13 +2,13 @@
 {
     'name': "Hr_Attendance",
 
-    'summary': "Short",
+    'summary': "Prevent Duplicate Check-In",
 
     'description': """
 Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "Md Hasibul Hasan",
     'website': "https://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -25,7 +25,6 @@ Long description of module's purpose
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/hr.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
