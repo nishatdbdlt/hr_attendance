@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="hr__attendance.list">
+      <field name="name">Hr_Attendance list</field>
+      <field name="model">hr__attendance.hr__attendance</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="hr__attendance.action_window">
+      <field name="name">Hr_Attendance window</field>
+      <field name="res_model">hr__attendance.hr__attendance</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="hr__attendance.action_server">
+      <field name="name">Hr_Attendance server</field>
+      <field name="model_id" ref="model_hr__attendance_hr__attendance"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="Hr_Attendance" id="hr__attendance.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="hr__attendance.menu_1" parent="hr__attendance.menu_root"/>
+    <menuitem name="Menu 2" id="hr__attendance.menu_2" parent="hr__attendance.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="hr__attendance.menu_1_list" parent="hr__attendance.menu_1"
+              action="hr__attendance.action_window"/>
+    <menuitem name="Server to list" id="hr__attendance" parent="hr__attendance.menu_2"
+              action="hr__attendance.action_server"/>
+-->
+  </data>
+</odoo>
